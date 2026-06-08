@@ -6,7 +6,8 @@ export const personalInfo = {
   phone: "9940023788",
   linkedin: "https://www.linkedin.com/in/jashvarthini-rajesh/",
   github: "https://github.com/jashvarthini18",
-  photo: "/profile.jpeg", 
+  // photo: "/profile.jpeg", 
+  photo: `${process.env.PUBLIC_URL}/profile.jpeg`,
 };
 
 export const education = [

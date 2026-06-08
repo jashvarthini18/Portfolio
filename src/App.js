@@ -264,7 +264,7 @@ const Navbar = ({ theme, toggleTheme }) => {
           ))}
           <li>
             <a
-              href="/resume.pdf"
+              href={`${process.env.PUBLIC_URL}/resume.pdf`}
               download
               aria-label="Download Resume"
               className="btn"
@@ -272,6 +272,15 @@ const Navbar = ({ theme, toggleTheme }) => {
             >
               <IconDownload /> Download Resume
             </a>
+            {/* <a
+              href="/resume.pdf"
+              download
+              aria-label="Download Resume"
+              className="btn"
+              style={{ justifyContent: "center", margin: "0 1.5rem" }}
+            >
+              <IconDownload /> Download Resume
+            </a> */}
           </li>
           <li>
             <button
